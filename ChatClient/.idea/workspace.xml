@@ -29,6 +29,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RunManager">
@@ -37,7 +38,7 @@
       <module name="ChatClient" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.*" />
+          <option name="PATTERN" value="com.constraints.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -62,6 +63,7 @@
       <option name="presentableId" value="Default" />
       <updated>1594911572302</updated>
       <workItem from="1594911573842" duration="11151000" />
+      <workItem from="1594991459142" duration="13763000" />
     </task>
     <servers />
   </component>
@@ -69,29 +71,54 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="765" y="234" key="#com.intellij.ide.util.MemberChooser" timestamp="1595000172694">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="765" y="234" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1595000172694" />
     <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1594921571424">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1594921571424" />
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1594922775019">
+    <state width="1877" height="352" key="GridCell.Tab.0.bottom" timestamp="1595006416670">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1594922775019" />
-    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1594922775019">
+    <state width="1877" height="352" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1595006416670" />
+    <state width="1877" height="352" key="GridCell.Tab.0.center" timestamp="1595006416670">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1594922775019" />
-    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1594922775019">
+    <state width="1877" height="352" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1595006416670" />
+    <state width="1877" height="352" key="GridCell.Tab.0.left" timestamp="1595006416670">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1594922775019" />
-    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1594922775019">
+    <state width="1877" height="352" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1595006416670" />
+    <state width="1877" height="352" key="GridCell.Tab.0.right" timestamp="1595006416670">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1594922775019" />
+    <state width="1877" height="352" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1595006416670" />
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1595006416671">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1595006416671" />
+    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1595006416671">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1595006416671" />
+    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1595006416670">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1595006416670" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1595006416671">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1595006416671" />
     <state x="440" y="99" key="SettingsEditor" timestamp="1594921581048">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="440" y="99" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1594921581048" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ChatClient$Main.ic" NAME="Main Coverage Results" MODIFIED="1594994794334" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.*</FILTER>
+    </SUITE>
   </component>
 </project>

@@ -1,28 +1,31 @@
 package com.view;
 
-import com.ImageConstraints;
+import com.constraints.ImageConstraints;
 
 import java.awt.*;
-import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import javax.swing.table.DefaultTableModel;
 
+import static com.constraints.ImageConstraints.img_emoji;
+
 public class ChatView extends JFrame {
 
     private JPanel contentPane;
     private String username;
-    private JTextField txtMessage;
+    public static JTextField txtMessage;
     private JTable table;
     private JTextArea txtAreaChat;
     private JButton btnFile;
+    private JButton btnEmoji;
     private JButton btnSend;
     private JButton btnLogout;
 
     private String[] columnNames = new String[]{"ONLINE"};
     private Object data = new Object[][]{};
+
 
     /**
      * Create the frame.
@@ -33,6 +36,10 @@ public class ChatView extends JFrame {
 
         initcomponents();
     }
+
+    private JPanel panel2;
+    private PanelEmoji panelEmoji;
+
 
     public void initcomponents() {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -50,7 +57,7 @@ public class ChatView extends JFrame {
         JPanel panel1 = new JPanel();
         panel1.setBackground(new Color(255, 250, 205));
         panel1.setBounds(10, 11, 208, 486);
-        contentPane.add(panel1);
+        //contentPane.add(panel1);
         panel1.setLayout(null);
 
         JLabel lblLogo = new JLabel("");
@@ -59,10 +66,10 @@ public class ChatView extends JFrame {
         lblLogo.setIcon(new ImageIcon(ImageConstraints.img_logo));
         panel1.add(lblLogo);
 
-        JLabel lblUsername = new JLabel("-----"+this.username+"-----");
+        JLabel lblUsername = new JLabel("-----" + this.username + "-----");
         lblUsername.setHorizontalAlignment(SwingConstants.CENTER);
-		lblUsername.setForeground(new Color(120, 90, 40));
-		lblUsername.setFont(new Font("Verdana", Font.PLAIN, 15));
+        lblUsername.setForeground(new Color(120, 90, 40));
+        lblUsername.setFont(new Font("Verdana", Font.PLAIN, 15));
         lblUsername.setBounds(20, 218, 166, 23);
 
         panel1.add(lblUsername);
@@ -77,16 +84,16 @@ public class ChatView extends JFrame {
 
         btnLogout = new JButton("LOGOUT CHATTING");
         btnLogout.setBounds(10, 443, 188, 34);
-		btnLogout.setForeground(new Color(120, 90, 40));
-		btnLogout.setFont(new Font("Verdana", Font.PLAIN, 15));
+        btnLogout.setForeground(new Color(120, 90, 40));
+        btnLogout.setFont(new Font("Verdana", Font.PLAIN, 15));
         panel1.add(btnLogout);
+        contentPane.add(panel1);
 
         /**
          * panel2
          */
-        JPanel panel2 = new JPanel();
+        panel2 = new JPanel();
         panel2.setBounds(228, 11, 480, 486);
-        contentPane.add(panel2);
         panel2.setLayout(null);
 
         JScrollPane scrollPane = new JScrollPane();
@@ -100,6 +107,7 @@ public class ChatView extends JFrame {
         txtMessage = new JTextField();
         txtMessage.setBackground(Color.WHITE);
         txtMessage.setBounds(10, 443, 314, 32);
+        txtMessage.setFont(new Font("", Font.PLAIN, 20));
         panel2.add(txtMessage);
         txtMessage.setColumns(10);
 
@@ -118,7 +126,35 @@ public class ChatView extends JFrame {
         JPanel panel = new JPanel();
         panel.setBounds(334, 443, 32, 32);
         panel2.add(panel);
+        panel.setLayout(null);
+
+        btnEmoji = new JButton("");
+        btnEmoji.setBounds(0, 0, 32, 32);
+        btnEmoji.setIcon(new ImageIcon(img_emoji));
+        panel.add(btnEmoji);
+
+        panelEmoji = new PanelEmoji();
+        panelEmoji.setBounds(260, 155, 315, 300);
+        panelEmoji.setVisible(false);
+        panelEmoji.setSize(315, 300);
+        contentPane.add(panelEmoji);
+
+        contentPane.add(panel2);
+
+
     }
+
+    boolean checkVisable = true;
+
+    public void showEmoji() {
+        if (checkVisable) {
+            panelEmoji.setVisible(true);
+        } else {
+            panelEmoji.setVisible(false);
+        }
+        checkVisable = !checkVisable;
+    }
+
 
     public String getName() {
         return this.username;
@@ -134,6 +170,10 @@ public class ChatView extends JFrame {
 
     public void setTable(Object[][] online) {
         table.setModel(new DefaultTableModel(online, columnNames));
+    }
+
+    public void addEmojiListener(ActionListener listener) {
+        btnEmoji.addActionListener(listener);
     }
 
     public void addSendListener(ActionListener listener) {

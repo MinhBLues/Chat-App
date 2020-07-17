@@ -1,4 +1,4 @@
-package com;
+package com.constraints;
 
 import javax.swing.*;
 import java.awt.*;
@@ -11,5 +11,6 @@ public class ImageConstraints {
      * Logo LoginView and SignUpView
      * */
     public static final Image img_logo1 = new ImageIcon("src/main/java/com/view/image/penguin.png").getImage().getScaledInstance(293, 462, Image.SCALE_SMOOTH);
+    public static final Image img_emoji = new ImageIcon("src/main/java/com/view/image/emoji.png").getImage().getScaledInstance(30, 30, Image.SCALE_SMOOTH);
 
 }

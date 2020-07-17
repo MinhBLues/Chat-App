@@ -11,7 +11,6 @@ import java.io.IOException;
 public class ChatController {
     LoginView loginView;
     ChatView chatView;
-    String user;
     Client client;
 
     public ChatController(ChatView chatView) {
@@ -21,6 +20,7 @@ public class ChatController {
         setTableOnline(client);
         chatView.addSendListener(new SendListener());
         chatView.addLogoutListener(new LogoutListener());
+        chatView.addEmojiListener(new EmojiListener());
     }
 
     public void showChatView() {
@@ -57,6 +57,13 @@ public class ChatController {
         });
         readMsg.start();
 
+    }
+
+    class EmojiListener implements ActionListener{
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            chatView.showEmoji();
+        }
     }
 
     class SendListener implements ActionListener {

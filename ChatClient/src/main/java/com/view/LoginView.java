@@ -7,7 +7,7 @@ import java.awt.event.MouseListener;
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 
-import static com.ImageConstraints.img_logo1;
+import static com.constraints.ImageConstraints.img_logo1;
 
 public class LoginView extends JFrame {
 
