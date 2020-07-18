@@ -13,7 +13,7 @@ public class ReadWriteCSV {
 
         try {
             String line = "";
-            reader = new BufferedReader(new FileReader("src\\main\\java\\DAO\\user.csv"));
+            reader = new BufferedReader(new FileReader("src\\main\\java\\com\\DAO\\user.csv"));
             reader.readLine();
             while ((line = reader.readLine()) != null) {
                 String[] fields = line.split(",");
@@ -41,7 +41,7 @@ public class ReadWriteCSV {
     public static void write(List<User> list){
         FileWriter fw=null;
         try{
-            fw=new FileWriter("src\\main\\java\\DAO\\user.csv");
+            fw=new FileWriter("src\\main\\java\\com\\DAO\\user.csv");
             fw.append("username,name,password\n");
 
             for(int i=0;i<list.size();i++){

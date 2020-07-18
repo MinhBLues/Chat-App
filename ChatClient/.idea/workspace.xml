@@ -1,7 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8909d87c-0b9d-4171-8463-b2e56346da24" name="Default Changelist" comment="" />
+    <list default="true" id="8909d87c-0b9d-4171-8463-b2e56346da24" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/DAO/user.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/controller/OnlineController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/view/OnlineView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/view/image/logout .png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/DAO/ReadWriteCSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DAO/ReadWriteCSV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/constraints/ImageConstraints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/constraints/ImageConstraints.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/SignupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/SignupController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/DAO/ReadWriteCSV.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/DAO/ReadWriteCSV.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/DAO/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/DAO/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/client/Client$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/client/Client$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/client/Client$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/client/Client$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/client/Client$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/client/Client$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/client/Client$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/client/Client$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/client/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/client/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/controller/LoginController$LoginListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controller/LoginController$LoginListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/controller/LoginController$SignupListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controller/LoginController$SignupListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/controller/SignupController$LoginListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controller/SignupController$LoginListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/controller/SignupController$SignupListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controller/SignupController$SignupListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/controller/SignupController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controller/SignupController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/view/ChatView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/view/ChatView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/view/LoginView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/view/LoginView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/view/PanelEmoji$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/view/PanelEmoji$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/view/PanelEmoji.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/view/PanelEmoji.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/view/SignUpView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/view/SignUpView.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +43,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1em0gcdj8D7mIaNdc7INJrlZx1Q" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -33,7 +66,7 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Main" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.Main" />
       <module name="ChatClient" />
       <extension name="coverage">
@@ -64,6 +97,8 @@
       <updated>1594911572302</updated>
       <workItem from="1594911573842" duration="11151000" />
       <workItem from="1594991459142" duration="13763000" />
+      <workItem from="1595006720727" duration="59000" />
+      <workItem from="1595044945413" duration="7214000" />
     </task>
     <servers />
   </component>
@@ -71,50 +106,62 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="414" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595052038786">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="414" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1595052038786" />
     <state x="765" y="234" key="#com.intellij.ide.util.MemberChooser" timestamp="1595000172694">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="765" y="234" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1595000172694" />
+    <state x="689" y="309" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1595052021743">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="689" y="309" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1595052021743" />
     <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1594921571424">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1594921571424" />
-    <state width="1877" height="352" key="GridCell.Tab.0.bottom" timestamp="1595006416670">
+    <state width="1877" height="352" key="GridCell.Tab.0.bottom" timestamp="1595053561183">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1595006416670" />
-    <state width="1877" height="352" key="GridCell.Tab.0.center" timestamp="1595006416670">
+    <state width="1877" height="352" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1595053561183" />
+    <state width="1877" height="352" key="GridCell.Tab.0.center" timestamp="1595053561182">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1595006416670" />
-    <state width="1877" height="352" key="GridCell.Tab.0.left" timestamp="1595006416670">
+    <state width="1877" height="352" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1595053561182" />
+    <state width="1877" height="352" key="GridCell.Tab.0.left" timestamp="1595053561182">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1595006416670" />
-    <state width="1877" height="352" key="GridCell.Tab.0.right" timestamp="1595006416670">
+    <state width="1877" height="352" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1595053561182" />
+    <state width="1877" height="352" key="GridCell.Tab.0.right" timestamp="1595053561182">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1595006416670" />
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1595006416671">
+    <state width="1877" height="352" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1595053561182" />
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1595053566922">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1595006416671" />
-    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1595006416671">
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1595053566922" />
+    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1595053566922">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1595006416671" />
-    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1595006416670">
+    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1595053566922" />
+    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1595053566922">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1595006416670" />
-    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1595006416671">
+    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1595053566922" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1595053566922">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1595006416671" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1595053566922" />
     <state x="440" y="99" key="SettingsEditor" timestamp="1594921581048">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="440" y="99" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1594921581048" />
+    <state width="968" height="533" key="XDebugger.FullValuePopup" timestamp="1595053588419">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="968" height="533" key="XDebugger.FullValuePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1595053588419" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ChatClient$Main.ic" NAME="Main Coverage Results" MODIFIED="1594994794334" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

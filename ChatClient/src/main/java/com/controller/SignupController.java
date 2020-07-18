@@ -4,6 +4,7 @@ import com.DAO.ReadWriteCSV;
 import com.DAO.User;
 import com.view.ChatView;
 import com.view.LoginView;
+import com.view.OnlineView;
 import com.view.SignUpView;
 
 import java.awt.event.ActionEvent;
@@ -14,7 +15,8 @@ import java.util.List;
 public class SignupController {
     SignUpView signupView;
     LoginView loginView;
-    ChatView chatView;
+    ///ChatView chatView;
+    //OnlineController onlineController;
     List<User> list;
 
     public SignupController(SignUpView signupView){
@@ -51,9 +53,9 @@ public class SignupController {
             list = ReadWriteCSV.read();
             list.add(iuser);
             ReadWriteCSV.write(list);
-            chatView = new ChatView(iuser.getName());
-            ChatController controller = new ChatController(chatView);
-            controller.showChatView();
+            //chatView = new ChatView(iuser.getName());
+            OnlineController controller = new OnlineController(iuser.getName());
+            controller.show();
             signupView.setVisible(false);
 
         }
