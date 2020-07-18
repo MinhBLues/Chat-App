@@ -9,6 +9,7 @@ import com.view.SignUpView;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.util.List;
 
 public class LoginController {
@@ -53,8 +54,9 @@ public class LoginController {
     }
     class SignupListener extends MouseAdapter {
 
-        public void actionPerformed(ActionEvent e) {
-
+        @Override
+        public void mouseClicked(MouseEvent e) {
+            super.mouseClicked(e);
             signupView = new SignUpView();
             SignupController controller = new SignupController(signupView);
             controller.showSignup();

@@ -21,7 +21,7 @@ public class SignUpView extends JFrame {
 	private JPasswordField txtPassword;
 	private JPasswordField txtCnfPass;
 	private JButton btnSignUp;
-	private JLabel lblSignIn;
+	private JPanel pnlSignIn;
 
 	/**
 	 * Create the frame.
@@ -107,13 +107,17 @@ public class SignUpView extends JFrame {
 		btnSignUp.setFont(new Font("Verdana", Font.PLAIN, 15));
 		btnSignUp.setBounds(406, 435, 100, 30);
 		panel.add(btnSignUp);
-		
-		lblSignIn = new JLabel("You have an account ? Log in now.");
-		lblSignIn.setBounds(351, 404, 207, 20);
+
+		JLabel lblSignIn = new JLabel("You have an account ? Log in now.");
+		lblSignIn.setBounds(0, 0, 207, 20);
 		lblSignIn.setForeground(Color.BLUE);
 		lblSignIn.setFont(new Font("Verdana", Font.PLAIN, 10));
-		panel.add(lblSignIn);
 
+		pnlSignIn = new JPanel();
+		pnlSignIn.setLayout(null);
+		pnlSignIn.setBounds(351, 404, 207, 20);
+		pnlSignIn.add(lblSignIn);
+		panel.add(pnlSignIn);
 
 	}
 
@@ -154,6 +158,6 @@ public class SignUpView extends JFrame {
 	}
 
 	public void addLoginListener(MouseListener listener) {
-		lblSignIn.addMouseListener(listener);
+		pnlSignIn.addMouseListener(listener);
 	}
 }
