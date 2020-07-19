@@ -10,7 +10,6 @@ public class ReadWriteCSV {
     public static List<User> read() {
         BufferedReader reader = null;
         List<User> list = new ArrayList<User>();
-
         try {
             String line = "";
             reader = new BufferedReader(new FileReader("src\\main\\java\\com\\DAO\\user.csv"));

@@ -34,7 +34,6 @@ public class LoginView extends JFrame {
         contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
         setContentPane(contentPane);
         contentPane.setLayout(null);
-
         JPanel panel = new JPanel();
         panel.setBounds(0, 0, 594, 493);
         contentPane.add(panel);

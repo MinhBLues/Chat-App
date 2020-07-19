@@ -12,5 +12,5 @@ public class ImageConstraints {
      * */
     public static final Image img_logo1 = new ImageIcon("src/main/java/com/view/image/penguin.png").getImage().getScaledInstance(293, 462, Image.SCALE_SMOOTH);
     public static final Image img_emoji = new ImageIcon("src/main/java/com/view/image/emoji.png").getImage().getScaledInstance(30, 30, Image.SCALE_SMOOTH);
-
+    public static final Image img_logout = new ImageIcon("src/main/java/com/view/image/logout.png").getImage().getScaledInstance(55, 55, Image.SCALE_SMOOTH);
 }
