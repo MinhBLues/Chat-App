@@ -7,13 +7,16 @@ import com.view.LoginView;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class ChatController {
     LoginView loginView;
     ChatView chatView;
     Client client;
 
+
     public ChatController(ChatView chatView) {
+
         this.chatView = chatView;
         client = new Client(this.chatView.getName());
         client.sendName();
@@ -59,7 +62,7 @@ public class ChatController {
 
     }
 
-    class EmojiListener implements ActionListener{
+    class EmojiListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
             chatView.showEmoji();
@@ -69,8 +72,11 @@ public class ChatController {
     class SendListener implements ActionListener {
 
         public void actionPerformed(ActionEvent e) {
-            chatView.setTextArea(chatView.getTextArea() + '\n' + " + You to " + chatView.getNameOnline() + ":" + chatView.getMsg() + '\n');
-            client.writeMessage(chatView.getNameOnline() + "#" + chatView.getMsg());
+            ArrayList<String> users = chatView.getNameOnline();
+            if (!users.isEmpty()) {
+                chatView.setTextArea(chatView.getTextArea() + '\n' + " + You to " + (users.size() > 1 ? users.get(0) : "all") + ":" + chatView.getMsg() + '\n');
+                client.writeMessage(chatView.getNameOnline() + "#" + chatView.getMsg());
+            }
             chatView.clearMsg();
         }
     }

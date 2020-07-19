@@ -4,6 +4,7 @@ import com.constraints.ImageConstraints;
 
 import java.awt.*;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
@@ -180,8 +181,14 @@ public class ChatView extends JFrame {
         btnSend.addActionListener(listener);
     }
 
-    public String getNameOnline() {
-        return table.getValueAt(table.getSelectedRow(), table.getSelectedColumn()).toString();
+    public ArrayList<String> getNameOnline() {
+
+        ArrayList<String> users = new ArrayList<>();
+        for (int i = 0; i < table.getRowCount(); i++) {
+            users.add(table.getValueAt(i,0).toString());
+        }
+        if(users.isEmpty()) return  null;
+        return users;
     }
 
     public String getMsg() {
