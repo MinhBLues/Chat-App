@@ -15,8 +15,6 @@ import java.util.List;
 public class SignupController {
     SignUpView signupView;
     LoginView loginView;
-    ///ChatView chatView;
-    //OnlineController onlineController;
     List<User> list;
 
     public SignupController(SignUpView signupView){
@@ -53,7 +51,6 @@ public class SignupController {
             list = ReadWriteCSV.read();
             list.add(iuser);
             ReadWriteCSV.write(list);
-            //chatView = new ChatView(iuser.getName());
             OnlineController controller = new OnlineController(iuser.getName());
             controller.show();
             signupView.setVisible(false);

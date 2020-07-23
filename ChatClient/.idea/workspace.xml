@@ -2,23 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8909d87c-0b9d-4171-8463-b2e56346da24" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/view/image/avatar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/view/image/logout.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/DAO/user.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DAO/user.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/constraints/ImageConstraints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/constraints/ImageConstraints.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/client/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/ChatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/ChatController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/OnlineController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/OnlineController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/SignupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/SignupController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/view/ChatView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/view/ChatView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/view/OnlineView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/view/OnlineView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/view/image/logout .png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/view/PanelEmoji.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/view/PanelEmoji.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/EmojiConstraints.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ImageConstraints.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/client/Client$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/client/Client$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/client/Client$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/client/Client$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/client/Client$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/client/Client$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/client/Client$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/client/Client$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/client/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/client/Client.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/constraints/ImageConstraints.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/constraints/ImageConstraints.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/controller/ChatController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controller/ChatController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/controller/ChatController$1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/controller/ChatController$EmojiListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controller/ChatController$EmojiListener.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/controller/ChatController$LogoutListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controller/ChatController$LogoutListener.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/controller/ChatController$SendListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controller/ChatController$SendListener.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/controller/ChatController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controller/ChatController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/controller/OnlineController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controller/OnlineController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/controller/OnlineController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controller/OnlineController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/controller/SignupController$LoginListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controller/SignupController$LoginListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/controller/SignupController$SignupListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controller/SignupController$SignupListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/controller/SignupController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controller/SignupController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/view/ChatView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/view/ChatView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/view/OnlineView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/view/OnlineView$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/view/OnlineView$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/view/OnlineView$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/view/OnlineView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/view/OnlineView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/view/image/emoji.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/view/image/icon-send.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/view/image/icons-file.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/view/image/penguin-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/view/image/penguin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,10 +61,11 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DBE.Init.BalloonShown" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
@@ -52,6 +75,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RunManager">
@@ -88,6 +112,14 @@
       <workItem from="1594991459142" duration="13763000" />
       <workItem from="1595006720727" duration="59000" />
       <workItem from="1595044945413" duration="14820000" />
+      <workItem from="1595143298199" duration="2928000" />
+      <workItem from="1595168489203" duration="594000" />
+      <workItem from="1595172110135" duration="6108000" />
+      <workItem from="1595261435595" duration="5725000" />
+      <workItem from="1595310663575" duration="4783000" />
+      <workItem from="1595433930308" duration="5242000" />
+      <workItem from="1595491572704" duration="8536000" />
+      <workItem from="1595513742102" duration="11570000" />
     </task>
     <servers />
   </component>
@@ -99,50 +131,54 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="414" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1595052038786" />
-    <state x="765" y="234" key="#com.intellij.ide.util.MemberChooser" timestamp="1595000172694">
+    <state x="765" y="234" key="#com.intellij.ide.util.MemberChooser" timestamp="1595523508646">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="765" y="234" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1595000172694" />
+    <state x="765" y="234" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1595523508646" />
     <state x="689" y="309" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1595052021743">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="689" y="309" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1595052021743" />
+    <state x="707" y="372" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1595493128994">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="707" y="372" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1050@0.0.1920.1050" timestamp="1595493128994" />
     <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1594921571424">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1594921571424" />
-    <state width="1877" height="352" key="GridCell.Tab.0.bottom" timestamp="1595063667946">
+    <state width="1877" height="134" key="GridCell.Tab.0.bottom" timestamp="1595527949425">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1595063667946" />
-    <state width="1877" height="352" key="GridCell.Tab.0.center" timestamp="1595063667946">
+    <state width="1877" height="134" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1595527949425" />
+    <state width="1877" height="134" key="GridCell.Tab.0.center" timestamp="1595527949425">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1595063667946" />
-    <state width="1877" height="352" key="GridCell.Tab.0.left" timestamp="1595063667946">
+    <state width="1877" height="134" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1595527949425" />
+    <state width="1877" height="134" key="GridCell.Tab.0.left" timestamp="1595527949424">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1595063667946" />
-    <state width="1877" height="352" key="GridCell.Tab.0.right" timestamp="1595063667946">
+    <state width="1877" height="134" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1595527949424" />
+    <state width="1877" height="134" key="GridCell.Tab.0.right" timestamp="1595527949425">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1595063667946" />
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1595063719756">
+    <state width="1877" height="134" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1595527949425" />
+    <state width="1877" height="344" key="GridCell.Tab.1.bottom" timestamp="1595527850304">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1595063719756" />
-    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1595063719756">
+    <state width="1877" height="344" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1595527850304" />
+    <state width="1877" height="344" key="GridCell.Tab.1.center" timestamp="1595527850304">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1595063719756" />
-    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1595063719756">
+    <state width="1877" height="344" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1595527850304" />
+    <state width="1877" height="344" key="GridCell.Tab.1.left" timestamp="1595527850304">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1595063719756" />
-    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1595063719756">
+    <state width="1877" height="344" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1595527850304" />
+    <state width="1877" height="344" key="GridCell.Tab.1.right" timestamp="1595527850304">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1595063719756" />
+    <state width="1877" height="344" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1595527850304" />
     <state x="440" y="99" key="SettingsEditor" timestamp="1594921581048">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -157,27 +193,21 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/controller/ChatController.java</url>
-          <line>74</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/view/ChatView.java</url>
-          <line>186</line>
-          <option name="timeStamp" value="4" />
+          <line>62</line>
+          <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
-        <watch expression="ImageConstraints.img_logout" language="JAVA" />
-        <watch expression="table.getValueAt(i,0).toString()" language="JAVA" />
-        <watch expression="table.getRowCount()" language="JAVA" />
+        <watch expression="ImageConstraints.img_logout" />
+        <watch expression="table.getRowCount()" />
+        <watch expression="lblUsername.getText()" language="JAVA" />
+        <watch expression="chatControllers.get(j).getTabOnline()" language="JAVA" />
+        <watch expression="chatControllers" language="JAVA" />
+        <watch expression="chatView.getTextArea()" language="JAVA" />
+        <watch expression="chatView" language="JAVA" />
       </configuration>
     </watches-manager>
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/ChatClient$Main.ic" NAME="Main Coverage Results" MODIFIED="1594994794334" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.*</FILTER>
-    </SUITE>
   </component>
 </project>

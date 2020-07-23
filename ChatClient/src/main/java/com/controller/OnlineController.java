@@ -4,16 +4,17 @@ import com.client.Client;
 import com.view.OnlineView;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class OnlineController {
-    Client client;
     OnlineView onlineView;
+    private ArrayList<String> chatList;
+
 
     public OnlineController(String username) {
-        client = new Client(username);
         onlineView = new OnlineView(username);
-        client.sendName();
-        setTableOnline(client);
+        chatList = new ArrayList<>();
+
     }
     public void show()
     {
@@ -29,6 +30,7 @@ public class OnlineController {
                     Object[][] online = new Object[50][1];
                     while (true) {
                         String msg = client.getInput().readUTF();
+                        System.out.println("<<<<<<<<<<<<<<<<<<<     "+msg);
                         int j = 0;
                         for (j = 0; j < i; j++) {
                             if (msg.equals(online[j][0])) break;

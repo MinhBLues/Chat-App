@@ -4,18 +4,20 @@ import com.constraints.EmojiConstraints;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.List;
 
-public class PanelEmoji extends JPanel {
+public class PanelEmoji extends JPanel implements ActionListener {
     private JPanel rootpanel;
     private JPanel pnlPeople;
 
     /**
      * Create the panel.
      */
-    public PanelEmoji() {
+    public PanelEmoji(ChatView chatView) {
         setLayout(null);
 
         rootpanel = new JPanel();
@@ -34,7 +36,7 @@ public class PanelEmoji extends JPanel {
 			pnlPeople.setPreferredSize(new Dimension(310, (emoji.get(i).length/8)*37));
 			tabEmoji.setFont(new Font("", Font.BOLD, 20));
 			pnlPeople.setLayout(null);
-			initPeople(emoji.get(i));
+			initPeople(chatView,emoji.get(i));
 			JScrollPane scrollPane = new JScrollPane(pnlPeople, JScrollPane.VERTICAL_SCROLLBAR_ALWAYS, JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
 			tabEmoji.addTab(emoji.get(i)[1], null, scrollPane, null);
 		}
@@ -43,7 +45,7 @@ public class PanelEmoji extends JPanel {
 
     }
 
-    public void initPeople(String []emoji) {
+    public void initPeople(ChatView chatView,String []emoji) {
         int k = 0;
         for (int i = 0; i < emoji.length / 8; i++) {
             for (int j = 0; j < 8; j++) {
@@ -55,13 +57,12 @@ public class PanelEmoji extends JPanel {
                 icon.setBounds(0,0,25,25);
                 panel.add(icon);
 				panel.setBounds(10 + 35 * j, 11 + 36 * i, 25, 25);
-
 				panel.addMouseListener(new MouseAdapter() {
 					@Override
 					public void mouseClicked(MouseEvent e) {
 						super.mouseClicked(e);
-						String msg = ChatView.txtMessage.getText();
-						ChatView.txtMessage.setText(msg+" "+ icon.getText());
+						String msg = chatView.getTxtMessage().getText();
+						chatView.setTxtMessage(msg+" "+ icon.getText());
 					}
 				});
 
@@ -70,5 +71,10 @@ public class PanelEmoji extends JPanel {
 
 
         }
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+
     }
 }

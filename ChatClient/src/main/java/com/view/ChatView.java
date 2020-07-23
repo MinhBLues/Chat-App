@@ -4,11 +4,12 @@ import com.constraints.ImageConstraints;
 
 import java.awt.*;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.util.ArrayList;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
-import javax.swing.table.DefaultTableModel;
 
 import static com.constraints.ImageConstraints.img_emoji;
 
@@ -16,17 +17,14 @@ public class ChatView extends JFrame {
 
     private JPanel contentPane;
     private String username;
-    public static JTextField txtMessage;
-    private JTable table;
+    private JTextField txtMessage;
     private JTextArea txtAreaChat;
     private JButton btnFile;
     private JButton btnEmoji;
     private JButton btnSend;
     private JButton btnLogout;
 
-    private String[] columnNames = new String[]{"ONLINE"};
-    private Object data = new Object[][]{};
-
+    private DefaultListModel model = new DefaultListModel();
 
     /**
      * Create the frame.
@@ -79,9 +77,8 @@ public class ChatView extends JFrame {
         scrollPane_1.setBounds(10, 245, 188, 187);
         panel1.add(scrollPane_1);
 
-        table = new JTable();
-        table.setModel(new DefaultTableModel((Object[][]) data, columnNames));
-        scrollPane_1.setViewportView(table);
+        list = new JList(model);
+        scrollPane_1.setViewportView(list);
 
         btnLogout = new JButton("LOGOUT CHATTING");
         btnLogout.setBounds(10, 443, 188, 34);
@@ -134,7 +131,7 @@ public class ChatView extends JFrame {
         btnEmoji.setIcon(new ImageIcon(img_emoji));
         panel.add(btnEmoji);
 
-        panelEmoji = new PanelEmoji();
+        panelEmoji = new PanelEmoji(this);
         panelEmoji.setBounds(260, 155, 315, 300);
         panelEmoji.setVisible(false);
         panelEmoji.setSize(315, 300);
@@ -142,10 +139,10 @@ public class ChatView extends JFrame {
 
         contentPane.add(panel2);
 
-
     }
 
     boolean checkVisable = true;
+    private JList list;
 
     public void showEmoji() {
         if (checkVisable) {
@@ -156,9 +153,24 @@ public class ChatView extends JFrame {
         checkVisable = !checkVisable;
     }
 
+    public String getUsername() {
+        return username;
+    }
+
+    public JTextField getTxtMessage() {
+        return txtMessage;
+    }
+
+    public void setTxtMessage(String txtMessage) {
+        this.txtMessage.setText(txtMessage);
+    }
 
     public String getName() {
         return this.username;
+    }
+
+    public  JTextArea getTxtAreaChat() {
+        return txtAreaChat;
     }
 
     public void setTextArea(String text) {
@@ -169,8 +181,8 @@ public class ChatView extends JFrame {
         return txtAreaChat.getText().trim();
     }
 
-    public void setTable(Object[][] online) {
-        table.setModel(new DefaultTableModel(online, columnNames));
+    public void setTable(DefaultListModel model) {
+        list.setModel(model);
     }
 
     public void addEmojiListener(ActionListener listener) {
@@ -184,10 +196,10 @@ public class ChatView extends JFrame {
     public ArrayList<String> getNameOnline() {
 
         ArrayList<String> users = new ArrayList<>();
-        for (int i = 0; i < table.getRowCount(); i++) {
-            users.add(table.getValueAt(i,0).toString());
+        for (int i = 0; i < list.getModel().getSize(); i++) {
+            users.add(String.valueOf(list.getModel().getElementAt(i)));
         }
-        if(users.isEmpty()) return  null;
+        if (users.isEmpty()) return null;
         return users;
     }
 

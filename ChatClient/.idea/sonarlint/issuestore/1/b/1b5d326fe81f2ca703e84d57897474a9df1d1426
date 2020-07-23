@@ -1,0 +1,18 @@
+
+\
+java:S2259I"AA "NullPointerException" could be thrown; "msg" is nullable here.(ÚÓÁ¤ûÿÿÿÿ
+=
+java:S1604a"(Make this anonymous inner class a lambda(ô§ê
+C
+java:S1604P"(Make this anonymous inner class a lambda(ÎÃùÉûÿÿÿÿ
+F
+java:S1481$"+Remove this unused "target" local variable.(‰‘Ï»úÿÿÿÿ
+F
+java:S1481>"+Remove this unused "target" local variable.(‰‘Ï»úÿÿÿÿ
+C
+java:S1604%"(Make this anonymous inner class a lambda(¥´®ùÿÿÿÿ
+=
+java:S2189R""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ
+C
+java:S1604?"(Make this anonymous inner class a lambda(®ÍŒÚÿÿÿÿÿ
+M	java:S106n"9Replace this use of System.out or System.err by a logger.(‚š‰1

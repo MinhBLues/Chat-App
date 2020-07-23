@@ -4,62 +4,50 @@ import com.client.Client;
 import com.view.ChatView;
 import com.view.LoginView;
 
+import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.IOException;
 import java.util.ArrayList;
 
 public class ChatController {
     LoginView loginView;
     ChatView chatView;
-    Client client;
+    private Client client;
 
 
-    public ChatController(ChatView chatView) {
+    public ChatController(Client client, ChatView chatView) {
 
         this.chatView = chatView;
-        client = new Client(this.chatView.getName());
-        client.sendName();
-        setTableOnline(client);
+        this.client = client;
         chatView.addSendListener(new SendListener());
         chatView.addLogoutListener(new LogoutListener());
         chatView.addEmojiListener(new EmojiListener());
+    }
+
+    public void setTextArea(String msg, String name) {
+        chatView.setTextArea(chatView.getTextArea() + '\n' + name + " to you:" +msg + '\n');
+    }
+
+    public String getTabOnline()
+    {
+        return chatView.getNameOnline().get(0);
+    }
+
+    public String getUsername()
+    {
+        return chatView.getUsername();
     }
 
     public void showChatView() {
         chatView.setVisible(true);
     }
 
-    public void setTableOnline(final Client client) {
-        Runnable target;
-        Thread readMsg = new Thread(new Runnable() {
-            public void run() {
-                try {
-                    int i = 0;
-                    Object[][] online = new Object[50][1];
-                    while (true) {
-                        String msg = client.getInput().readUTF();
-                        String[] ex = msg.split(":");
-                        if (ex.length > 1) {
-                            chatView.setTextArea(chatView.getTextArea() + '\n' + msg + '\n');
-                        } else {
-                            int j = 0;
-                            for (j = 0; j < i; j++) {
-                                if (msg.equals(online[j][0])) break;
-                            }
-                            if (j == i && !msg.equals(client.getUsername())) {
-                                online[i++][0] = msg;
-                            }
-                            chatView.setTable(online);
-                        }
-                    }
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-        });
-        readMsg.start();
+    public void setTabOnline(DefaultListModel online) {
+        chatView.setTable(online);
+    }
 
+    public String getTxtArea() {
+        return chatView.getTextArea();
     }
 
     class EmojiListener implements ActionListener {
@@ -73,18 +61,25 @@ public class ChatController {
 
         public void actionPerformed(ActionEvent e) {
             ArrayList<String> users = chatView.getNameOnline();
+            System.out.println(users);
             if (!users.isEmpty()) {
-                chatView.setTextArea(chatView.getTextArea() + '\n' + " + You to " + (users.size() > 1 ? users.get(0) : "all") + ":" + chatView.getMsg() + '\n');
-                client.writeMessage(chatView.getNameOnline() + "#" + chatView.getMsg());
+                chatView.setTextArea(chatView.getTextArea() + '\n' + " + You to " + (users.size() <= 1 ? users.get(0) : "all") + ":" + chatView.getMsg() + '\n');
+                StringBuilder msg = new StringBuilder();
+                for (String user:users
+                     ) {
+                    msg.append(user+"#");
+                }
+                client.writeMessage("2#" + msg.toString()+ chatView.getMsg());
             }
             chatView.clearMsg();
         }
     }
 
+
     class LogoutListener implements ActionListener {
 
         public void actionPerformed(ActionEvent e) {
-            client.writeMessage("logout");
+            //chatView.getClient().writeMessage("logout");
             loginView = new LoginView();
             LoginController controller = new LoginController(loginView);
             controller.showLoginView();

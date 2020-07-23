@@ -37,8 +37,8 @@ public class LoginController {
                 if (list.get(i).getUsername().equals(loginView.getName())) {
                     if (list.get(i).getPassword().equals(loginView.getPassword())) {
                         chatView = new ChatView(loginView.getName());
-                        ChatController controller = new ChatController(chatView);
-                        controller.showChatView();
+                        //ChatController controller = new ChatController(chatView);
+                        //controller.showChatView();
                         loginView.setVisible(false);
                     }
                     else{

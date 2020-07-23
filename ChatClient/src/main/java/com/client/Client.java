@@ -31,18 +31,13 @@ public class Client {
         }
 
     }
-//    public static void main(String[] args){
-//        Client client = new Client();
-//        client.readMessageThread();
-//        client.writeMessageThread();
-//    }
 
     public void sendName() {
         Runnable target;
         Thread sendName = new Thread(new Runnable() {
             public void run() {
                 try {
-                    output.writeUTF(username);
+                    output.writeUTF("1#"+username);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
