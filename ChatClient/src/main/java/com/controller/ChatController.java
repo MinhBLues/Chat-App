@@ -32,6 +32,10 @@ public class ChatController {
     {
         return chatView.getNameOnline().get(0);
     }
+    public ArrayList<String> getListChat()
+    {
+        return chatView.getNameOnline();
+    }
 
     public String getUsername()
     {
@@ -74,7 +78,6 @@ public class ChatController {
             chatView.clearMsg();
         }
     }
-
 
     class LogoutListener implements ActionListener {
 
