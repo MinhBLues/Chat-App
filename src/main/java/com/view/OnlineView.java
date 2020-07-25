@@ -14,7 +14,7 @@ import java.awt.event.ActionListener;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class OnlineView extends JFrame {
+public class OnlineView extends JFrame implements ActionListener{
 
     private JPanel contentPane;
     private String[] columnNames = new String[]{"ONLINE"};
@@ -23,11 +23,12 @@ public class OnlineView extends JFrame {
     private JLabel lblUsername;
     private ArrayList<String> chatListSingle;
     private ArrayList<String> chatListGroup;
+    private JButton btnLogout;
 
     /**
      * Create the frame.
      */
-    public OnlineView(String username) {
+    public OnlineView(String username){
         chatListGroup = new ArrayList<>();
         chatListSingle = new ArrayList<>();
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -59,11 +60,13 @@ public class OnlineView extends JFrame {
         table.setSelectionMode(ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
         scrollPane.setViewportView(table);
 
-        JButton btnLogout = new JButton("");
+        btnLogout = new JButton("");
         btnLogout.setBounds(350, 11, 50, 50);
         btnLogout.setBackground(Color.WHITE);
         btnLogout.setIcon(new ImageIcon(ImageConstraints.img_logout));
         contentPane.add(btnLogout);
+        //btnLogout.addActionListener(this);
+
 
         JButton btnChat = new JButton("Chat");
         btnChat.setBounds(30, 379, 89, 43);
@@ -214,5 +217,15 @@ public class OnlineView extends JFrame {
             chatController.showChatView();
             chatGroup.add(chatController);
         }
+    }
+    public Client getClient(){
+        return this.client;
+    }
+    @Override
+    public void actionPerformed(ActionEvent e) {
+    }
+
+    public void addLogoutListener(ActionListener listener){
+        btnLogout.addActionListener(listener);
     }
 }

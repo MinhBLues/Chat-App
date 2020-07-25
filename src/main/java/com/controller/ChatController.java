@@ -3,6 +3,7 @@ package com.controller;
 import com.client.Client;
 import com.view.ChatView;
 import com.view.LoginView;
+import com.view.OnlineView;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -82,10 +83,6 @@ public class ChatController {
     class LogoutListener implements ActionListener {
 
         public void actionPerformed(ActionEvent e) {
-            //chatView.getClient().writeMessage("logout");
-            loginView = new LoginView();
-            LoginController controller = new LoginController(loginView);
-            controller.showLoginView();
             chatView.setVisible(false);
         }
     }

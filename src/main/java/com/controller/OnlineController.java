@@ -1,20 +1,33 @@
 package com.controller;
 
 import com.client.Client;
+import com.view.LoginView;
 import com.view.OnlineView;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.io.IOException;
 import java.util.ArrayList;
 
 public class OnlineController {
     OnlineView onlineView;
     private ArrayList<String> chatList;
-
-
+    LoginView loginView;
     public OnlineController(String username) {
         onlineView = new OnlineView(username);
         chatList = new ArrayList<>();
+        onlineView.addLogoutListener(new LogoutListener());
+    }
+    class LogoutListener implements ActionListener {
 
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            onlineView.getClient().writeMessage("4#" + onlineView.getName());
+            onlineView.setVisible(false);
+            loginView = new LoginView();
+            LoginController controller = new LoginController(loginView);
+            controller.showLoginView();
+        }
     }
     public void show()
     {
