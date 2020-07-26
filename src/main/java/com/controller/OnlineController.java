@@ -10,6 +10,8 @@ import java.awt.event.ActionListener;
 import com.view.ChatView;
 
 import javax.swing.*;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -31,34 +33,32 @@ public class OnlineController {
         onlineView.addChatListener(new ChatListener());
         showBoxRecevice();
         onlineView.addLogoutListener(new LogoutListener());
+        onlineView.addWindowListener(new CloseListener());
     }
 
     class LogoutListener implements ActionListener {
 
         @Override
         public void actionPerformed(ActionEvent e) {
-            try {
-                client.getOutput().writeUTF("4#" + username);
-            } catch (IOException ex) {
-                ex.printStackTrace();
-            }
-            onlineView.setVisible(false);
-
-            for (int i = 0; i <chatGroup.size() ; i++) {
-                chatGroup.get(i).chatView.setVisible(false);
-            }
-            for (int i = 0; i <chatSingle.size() ; i++) {
-                chatSingle.get(i).chatView.setVisible(false);
-            }
-            chatListSingle.clear();
-            chatSingle.clear();
-            chatGroup.clear();
-            chatListGroup.clear();
-            loginView = new LoginView();
-            LoginController controller = new LoginController(loginView);
-            controller.showLoginView();
+            logout();
         }
 
+    }
+
+    class CloseListener extends WindowAdapter {
+        @Override
+        public void windowClosing(WindowEvent e) {
+            super.windowClosing(e);
+            logout();
+        }
+    }
+
+    class ChatListener implements ActionListener {
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            boxChat();
+        }
     }
 
     public void show() {
@@ -306,14 +306,6 @@ public class OnlineController {
         }
     }
 
-    class ChatListener implements ActionListener {
-
-        @Override
-        public void actionPerformed(ActionEvent e) {
-            boxChat();
-        }
-    }
-
     public void boxChat() {
 
         int[] selectedrows = onlineView.getList().getSelectedIndices();
@@ -341,4 +333,28 @@ public class OnlineController {
             chatGroup.add(chatController);
         }
     }
+
+    public void logout() {
+        try {
+            client.getOutput().writeUTF("4#" + username);
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+        onlineView.setVisible(false);
+
+        for (int i = 0; i < chatGroup.size(); i++) {
+            chatGroup.get(i).chatView.setVisible(false);
+        }
+        for (int i = 0; i < chatSingle.size(); i++) {
+            chatSingle.get(i).chatView.setVisible(false);
+        }
+        chatListSingle.clear();
+        chatSingle.clear();
+        chatGroup.clear();
+        chatListGroup.clear();
+        loginView = new LoginView();
+        LoginController controller = new LoginController(loginView);
+        controller.showLoginView();
+    }
+
 }

@@ -7,6 +7,7 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
 
 public class OnlineView extends JFrame{
 
@@ -24,6 +25,8 @@ public class OnlineView extends JFrame{
     public OnlineView(String username) {
 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);
+        setResizable(false);
         setBounds(100, 100, 451, 472);
         contentPane = new JPanel();
         contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -46,10 +49,6 @@ public class OnlineView extends JFrame{
         scrollPane.setBounds(10, 11, 374, 282);
         panel.add(scrollPane);
 
-//        table = new JTable();
-////        table.setModel(new DefaultTableModel((Object[][]) data, columnNames));
-////        table.setRowSelectionAllowed(true);
-////        table.setSelectionMode(ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
         list = new JList(new DefaultListModel());
         list.setSelectionMode( ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
         scrollPane.setViewportView(list);
@@ -68,15 +67,6 @@ public class OnlineView extends JFrame{
 
     }
 
-//    public JTable getTable() {
-//        return table;
-//    }
-
-//    public void setTable(Object[][] online) {
-//        table.setModel(new DefaultTableModel(online, columnNames));
-//    }
-
-
     public JList getList() {
         return list;
     }
@@ -91,5 +81,9 @@ public class OnlineView extends JFrame{
 
     public void addLogoutListener(ActionListener listener){
         btnLogout.addActionListener(listener);
+    }
+
+    public void addCloseListener(WindowAdapter windowAdapter){
+        this.addWindowListener(windowAdapter);
     }
 }

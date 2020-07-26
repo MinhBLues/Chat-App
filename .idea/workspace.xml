@@ -4,11 +4,9 @@
     <list default="true" id="8909d87c-0b9d-4171-8463-b2e56346da24" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/DAO/user.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DAO/user.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/client/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/OnlineController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/OnlineController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/view/OnlineView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/view/OnlineView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/client/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/client/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/controller/OnlineController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controller/OnlineController$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/controller/OnlineController$ChatListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controller/OnlineController$ChatListener.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/controller/OnlineController$LogoutListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controller/OnlineController$LogoutListener.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/controller/OnlineController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controller/OnlineController.class" afterDir="false" />
@@ -137,22 +135,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1594921571424" />
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1595757293095">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1595757742734">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1595757293095" />
-    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1595757293095">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1595757742734" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1595757742734">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1595757293095" />
-    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1595757293095">
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1595757742734" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1595757742734">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1595757293095" />
-    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1595757293095">
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1595757742734" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1595757742734">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1595757293095" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1595757742734" />
     <state width="1877" height="356" key="GridCell.Tab.1.bottom" timestamp="1595757026144">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
