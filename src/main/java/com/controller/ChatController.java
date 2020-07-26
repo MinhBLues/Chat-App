@@ -8,13 +8,16 @@ import com.view.OnlineView;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class ChatController {
     LoginView loginView;
     ChatView chatView;
     private Client client;
-
+    private File file;
 
     public ChatController(Client client, ChatView chatView) {
 
@@ -23,24 +26,19 @@ public class ChatController {
         chatView.addSendListener(new SendListener());
         chatView.addLogoutListener(new LogoutListener());
         chatView.addEmojiListener(new EmojiListener());
+        chatView.addSendFileListener(new SendFileLinter());
     }
 
     public void setTextArea(String msg, String name) {
-        chatView.setTextArea(chatView.getTextArea() + '\n' + name + " to you:" +msg + '\n');
+        chatView.setTextArea(chatView.getTextArea() + '\n' + name + " to you:" + msg + '\n');
     }
 
-    public String getTabOnline()
-    {
+    public String getTabOnline() {
         return chatView.getNameOnline().get(0);
     }
-    public ArrayList<String> getListChat()
-    {
-        return chatView.getNameOnline();
-    }
 
-    public String getUsername()
-    {
-        return chatView.getUsername();
+    public ArrayList<String> getListChat() {
+        return chatView.getNameOnline();
     }
 
     public void showChatView() {
@@ -51,10 +49,6 @@ public class ChatController {
         chatView.setTable(online);
     }
 
-    public String getTxtArea() {
-        return chatView.getTextArea();
-    }
-
     class EmojiListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
@@ -62,19 +56,44 @@ public class ChatController {
         }
     }
 
+    private FileInputStream fr = null;
+
+    private byte bytefile[];
+
     class SendListener implements ActionListener {
 
         public void actionPerformed(ActionEvent e) {
             ArrayList<String> users = chatView.getNameOnline();
-            System.out.println(users);
-            if (!users.isEmpty()) {
+            if (!users.isEmpty() && !chatView.getMsg().trim().isEmpty()) {
+                System.out.println(chatView.getMsg());
                 chatView.setTextArea(chatView.getTextArea() + '\n' + " + You to " + (users.size() <= 1 ? users.get(0) : "all") + ":" + chatView.getMsg() + '\n');
                 StringBuilder msg = new StringBuilder();
-                for (String user:users
-                     ) {
-                    msg.append(user+"#");
+                for (String user : users
+                ) {
+                    msg.append(user + "#");
                 }
-                client.writeMessage("2#" + msg.toString()+ chatView.getMsg());
+                if (fr != null) {
+                    if (chatView.getMsg().contains(file.getName())) {
+
+                        try {
+                            client.getOutput().writeUTF("3#" + msg.toString() + chatView.getMsg() + "#" + file.length());
+                            client.getOutput().write(bytefile, 0, bytefile.length);
+
+                        } catch (IOException ex) {
+                            System.out.println("error 82");
+
+                        }
+                        fr = null;
+                        file = null;
+                        bytefile = null;
+                    }
+                } else {
+                    try {
+                        client.getOutput().writeUTF("2#" + msg.toString() + chatView.getMsg());
+                    } catch (IOException ex) {
+                        System.out.println("error 93");
+                    }
+                }
             }
             chatView.clearMsg();
         }
@@ -84,6 +103,35 @@ public class ChatController {
 
         public void actionPerformed(ActionEvent e) {
             chatView.setVisible(false);
+        }
+    }
+
+    class SendFileLinter implements ActionListener {
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            JFileChooser fileChooser = new JFileChooser();
+            fileChooser.setAcceptAllFileFilterUsed(false);
+
+            int option = fileChooser.showOpenDialog(chatView.getContentPane());
+            if (option == JFileChooser.APPROVE_OPTION) {
+                file = fileChooser.getSelectedFile();
+                if (file.length() > 10485760) {
+                    JOptionPane.showMessageDialog(chatView.getContentPane(), "File size > 10MB");
+                    file = null;
+                } else {
+                    try {
+                        fr = new FileInputStream(file);
+                        bytefile = new byte[(int) file.length()];
+                        fr.read(bytefile, 0, bytefile.length);
+                        chatView.setTxtMessage(file.getName());
+                        fr.close();
+
+                    } catch (IOException ex) {
+                        System.out.println(ex.getMessage());
+                    }
+                }
+            }
         }
     }
 }

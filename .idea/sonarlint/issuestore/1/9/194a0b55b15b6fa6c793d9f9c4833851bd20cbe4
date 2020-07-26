@@ -1,12 +1,14 @@
 
-[
-java:S1155;">Use isEmpty() to check whether the collection is empty or not.(îæÙ8€®íé¶.
-R
-java:S1128
-"0Remove this unused import 'java.io.IOException'.(ªº»Úıÿÿÿÿ8ö¾½·.
+U	java:S106]"9Replace this use of System.out or System.err by a logger.(ëÅ¢â8ß¨Æ³¸.
+[	java:S106†"9Replace this use of System.out or System.err by a logger.(ı™øøÿÿÿÿ8ƒˆ¤¦¸.
+U	java:S106R"9Replace this use of System.out or System.err by a logger.(ÖÕï¤8öÙÙĞ¸.
+Z
+java:S1197<"8Move the array designator from the variable to the type.(ĞËğøşÿÿÿÿ8á„¥¸.
+t
+java:S3776@"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(¼ Òşüÿÿÿÿ8ïúÍª¸.
+X	java:S125h"<This block of commented-out lines of code should be removed.(€Á©ô8ƒˆ¤¦¸.
+Z	java:S106C"9Replace this use of System.out or System.err by a logger.(‰ËÑòÿÿÿÿÿ8åĞ“ª¸.
 Q
-java:S3740%"/Provide the parametrized type for this generic.(İÑäÅıÿÿÿÿ8ı½Ò·.
-Z	java:S1069"9Replace this use of System.out or System.err by a logger.(´ûüÿÿÿÿ8¨“Ëé¶.
-X	java:S125"<This block of commented-out lines of code should be removed.(¿İÄ¨8»¡À½·.
-P
-java:S1128".Remove this unused import 'com.client.Client'.(²Œú şÿÿÿÿ8 ü¡¾·.
+java:S3740/"/Provide the parametrized type for this generic.(İÑäÅıÿÿÿÿ8øŠ¤¸.
+
+java:S1319'"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(¿ÜæŠ8øŠ¤¸.

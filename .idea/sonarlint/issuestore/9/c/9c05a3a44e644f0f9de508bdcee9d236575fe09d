@@ -1,29 +1,6 @@
 
-J
-java:S1948U"(Make "client" transient or serializable.(‚Ø–øùÿÿÿÿ8“ƒ®¾·.
-Z	java:S106e"9Replace this use of System.out or System.err by a logger.(æ¨¤šøÿÿÿÿ8™†·.
-Q
-java:S3740j"/Provide the parametrized type for this generic.(–Åä¿üÿÿÿÿ8¸ºŞ·.
-t
-java:S3776W"RRefactor this method to reduce its Cognitive Complexity from 29 to the 15 allowed.(¬Éƒãÿÿÿÿÿ8ï…ğ€·.
-M
-java:S3740’"/Provide the parametrized type for this generic.(ôû³ß8ŒÂ•¾·.
-M
-java:S3740’"/Provide the parametrized type for this generic.(ôû³ß8ŒÂ•¾·.
-Q
-java:S3740j"/Provide the parametrized type for this generic.(–Åä¿üÿÿÿÿ8¸ºŞ·.
-M
-java:S1481Z"+Remove this unused "target" local variable.(‰‘Ï»úÿÿÿÿ8ˆ—º€·.
-Q	java:S110"<This class has 6 parents which is greater than 5 authorized.(üÑì‡
-<
-java:S1948"&Make "data" transient or serializable.(ÿºİÜ
-C
-java:S1604D"(Make this anonymous inner class a lambda(§ªúëùÿÿÿÿ
 d
-java:S3252"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öşÿÿÿÿ
-\
-java:S2259J"FA "NullPointerException" could be thrown; "username" is nullable here.(Â‡ïÏ
-8
-java:S2438[""Argument 1" is a "Thread".(¢ıĞÆ8¡ºµ¾·.
-W
-java:S1161\":Add the "@Override" annotation above this method signature(“–ış8¡ºµ¾·.
+java:S3252"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öşÿÿÿÿ
+<
+java:S1948"&Make "data" transient or serializable.(ÿºİÜ
+Q	java:S110"<This class has 6 parents which is greater than 5 authorized.(üÑì‡

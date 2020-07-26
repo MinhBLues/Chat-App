@@ -1,10 +1,50 @@
 
-]	java:S125"<This block of commented-out lines of code should be removed.(ÍÙØÿÿÿÿÿ8˜ ¯€·.
+Q
+java:S3740~"/Provide the parametrized type for this generic.(–Åä¿üÿÿÿÿ8Š­éÏ¸.
+q
+java:S4042Ü"NUse "java.nio.file.Files#delete" here for better messages on error conditions.(ë“«øÿÿÿÿ8¯ÙéÏ¸.
+J
+java:S1604&"(Make this anonymous inner class a lambda(“¯ªâüÿÿÿÿ8û„ôµ¸.
+b	java:S899Õ"@Do something with the "boolean" value returned by "setWritable".(ö¤ìÔşÿÿÿÿ8¯ÙéÏ¸.
+o
+java:S3776#"SRefactor this method to reduce its Cognitive Complexity from 176 to the 15 allowed.(ÿéÑO8û„ôµ¸.
 F
-java:S1481"+Remove this unused "target" local variable.(‰‘Ï»úÿÿÿÿ
-C
-java:S1604"(Make this anonymous inner class a lambda(“¯ªâüÿÿÿÿ
-]	java:S125"<This block of commented-out lines of code should be removed.(êµñ…ÿÿÿÿÿ8˜ ¯€·.
-U	java:S106 "9Replace this use of System.out or System.err by a logger.(©úÖŸ8ã¨°ê¶.
-=
-java:S2189""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ
+java:S1659g"$Declare "sizeEx" on a separate line.(ğĞß¸øÿÿÿÿ8Š­éÏ¸.
+u
+java:S3776´"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(²Ã†œûÿÿÿÿ8¯ÙéÏ¸.
+Q
+java:S3740F"/Provide the parametrized type for this generic.(–Åä¿üÿÿÿÿ8Š­éÏ¸.
+i
+java:S11929"GDefine a constant instead of duplicating this literal "3File3" 7 times.(×üšæüÿÿÿÿ8Š­éÏ¸.
+[	java:S106É"9Replace this use of System.out or System.err by a logger.(Ş¯Ãùøÿÿÿÿ8¯ÙéÏ¸.
+[	java:S106è"9Replace this use of System.out or System.err by a logger.(‚ƒêùÿÿÿÿ8¯ÙéÏ¸.
+[	java:S106Ì"9Replace this use of System.out or System.err by a logger.(’Ãßıÿÿÿÿ8¯ÙéÏ¸.
+[	java:S106­"9Replace this use of System.out or System.err by a logger.(–Ç¨åúÿÿÿÿ8Š­éÏ¸.
+M
+java:S3740ü"/Provide the parametrized type for this generic.(ôû³ß8¯ÙéÏ¸.
+V	java:S106Ã"9Replace this use of System.out or System.err by a logger.(ßÄ³®8¯ÙéÏ¸.
+{	java:S135‘"YReduce the total number of break and continue statements in this loop to use at most one.(¦ÄˆĞÿÿÿÿÿ8Š­éÏ¸.
+[
+java:S1197¿"8Move the array designator from the variable to the type.(·²Æ‘ÿÿÿÿÿ8¯ÙéÏ¸.
+V	java:S106à"9Replace this use of System.out or System.err by a logger.(ÓÀ²Ğ8¯ÙéÏ¸.
+[
+java:S1197Ø"8Move the array designator from the variable to the type.(·²Æ‘ÿÿÿÿÿ8¯ÙéÏ¸.
+Q
+java:S3740~"/Provide the parametrized type for this generic.(–Åä¿üÿÿÿÿ8Š­éÏ¸.
+V	java:S106İ"9Replace this use of System.out or System.err by a logger.(ßÁÛÑ8¯ÙéÏ¸.
+M
+java:S2093Ğ"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8¯ÙéÏ¸.
+l
+java:S2095Â"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(É£8¯ÙéÏ¸.
+Q
+java:S3740F"/Provide the parametrized type for this generic.(–Åä¿üÿÿÿÿ8Š­éÏ¸.
+Z	java:S106Y"9Replace this use of System.out or System.err by a logger.(©şêÜúÿÿÿÿ8Š­éÏ¸.
+W
+java:S1141V"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8Š­éÏ¸.
+M
+java:S3740ü"/Provide the parametrized type for this generic.(ôû³ß8¯ÙéÏ¸.
+M
+java:S3740„"/Provide the parametrized type for this generic.(ôû³ß8¯ÙéÏ¸.
+\	java:S899Ô"@Do something with the "boolean" value returned by "setReadable".(Éö¥R8¯ÙéÏ¸.
+M
+java:S3740„"/Provide the parametrized type for this generic.(ôû³ß8¯ÙéÏ¸.

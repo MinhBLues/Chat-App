@@ -4,8 +4,6 @@ import com.constraints.ImageConstraints;
 
 import java.awt.*;
 import java.awt.event.ActionListener;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
 import java.util.ArrayList;
 
 import javax.swing.*;
@@ -23,8 +21,9 @@ public class ChatView extends JFrame {
     private JButton btnEmoji;
     private JButton btnSend;
     private JButton btnLogout;
+    private PanelEmoji panelEmoji;
+    private JList list;
 
-    private DefaultListModel model = new DefaultListModel();
 
     /**
      * Create the frame.
@@ -35,10 +34,6 @@ public class ChatView extends JFrame {
 
         initcomponents();
     }
-
-    private JPanel panel2;
-    private PanelEmoji panelEmoji;
-
 
     public void initcomponents() {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -56,7 +51,6 @@ public class ChatView extends JFrame {
         JPanel panel1 = new JPanel();
         panel1.setBackground(new Color(255, 250, 205));
         panel1.setBounds(10, 11, 208, 486);
-        //contentPane.add(panel1);
         panel1.setLayout(null);
 
         JLabel lblLogo = new JLabel("");
@@ -77,7 +71,7 @@ public class ChatView extends JFrame {
         scrollPane_1.setBounds(10, 245, 188, 187);
         panel1.add(scrollPane_1);
 
-        list = new JList(model);
+        list = new JList(new DefaultListModel());
         scrollPane_1.setViewportView(list);
 
         btnLogout = new JButton("LOGOUT CHATTING");
@@ -90,7 +84,7 @@ public class ChatView extends JFrame {
         /**
          * panel2
          */
-        panel2 = new JPanel();
+        JPanel panel2 = new JPanel();
         panel2.setBounds(228, 11, 480, 486);
         panel2.setLayout(null);
 
@@ -142,7 +136,6 @@ public class ChatView extends JFrame {
     }
 
     boolean checkVisable = true;
-    private JList list;
 
     public void showEmoji() {
         if (checkVisable) {
@@ -151,10 +144,6 @@ public class ChatView extends JFrame {
             panelEmoji.setVisible(false);
         }
         checkVisable = !checkVisable;
-    }
-
-    public String getUsername() {
-        return username;
     }
 
     public JTextField getTxtMessage() {
@@ -167,10 +156,6 @@ public class ChatView extends JFrame {
 
     public String getName() {
         return this.username;
-    }
-
-    public  JTextArea getTxtAreaChat() {
-        return txtAreaChat;
     }
 
     public void setTextArea(String text) {
@@ -191,6 +176,10 @@ public class ChatView extends JFrame {
 
     public void addSendListener(ActionListener listener) {
         btnSend.addActionListener(listener);
+    }
+
+    public void addSendFileListener(ActionListener listener) {
+        btnFile.addActionListener(listener);
     }
 
     public ArrayList<String> getNameOnline() {

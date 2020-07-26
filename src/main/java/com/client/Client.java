@@ -33,17 +33,11 @@ public class Client {
     }
 
     public void sendName() {
-        Runnable target;
-        Thread sendName = new Thread(new Runnable() {
-            public void run() {
-                try {
-                    output.writeUTF("1#"+username);
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-        });
-        sendName.start();
+        try {
+            output.writeUTF("1#" + username);
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
     }
 
     public DataInputStream getInput() {
@@ -56,54 +50,6 @@ public class Client {
 
     public String getUsername() {
         return this.username;
-    }
-
-    public void readMessageThread() {
-        Runnable target;
-        Thread readMessage = new Thread(new Runnable() {
-            public void run() {
-                String msg = null;
-                do {
-                    try {
-                        msg = input.readUTF();
-                        log(msg);
-                    } catch (IOException ex) {
-                        log("Read message thread: " + ex.getMessage());
-                    }
-                } while (!msg.equals("END"));
-            }
-        });
-        readMessage.start();
-    }
-
-    public void writeMessageThread() {
-        Thread sendMessage = new Thread(new Runnable() {
-            public void run() {
-                while (true) {
-                    String msg = scanner.nextLine();
-
-                    try {
-                        output.writeUTF(msg);
-                    } catch (IOException ex) {
-                        log("Write message thread: " + ex.getMessage());
-                    }
-                }
-            }
-        });
-        sendMessage.start();
-    }
-
-    public void writeMessage(final String msg) {
-        Thread thread = new Thread(new Runnable() {
-            public void run() {
-                try {
-                    output.writeUTF(msg);
-                } catch (IOException ex) {
-                    log("Write message thread: " + ex.getMessage());
-                }
-            }
-        });
-        thread.start();
     }
 
     private void log(String msg) {
