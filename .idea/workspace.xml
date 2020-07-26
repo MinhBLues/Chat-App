@@ -5,10 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/DAO/user.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DAO/user.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/client/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/controller/LoginController$LoginListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controller/LoginController$LoginListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/controller/LoginController$SignupListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controller/LoginController$SignupListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/SignupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/SignupController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

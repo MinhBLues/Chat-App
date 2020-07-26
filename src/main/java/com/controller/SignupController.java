@@ -7,6 +7,7 @@ import com.view.LoginView;
 import com.view.OnlineView;
 import com.view.SignUpView;
 
+import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
@@ -43,11 +44,11 @@ public class SignupController {
         public void actionPerformed(ActionEvent e) {
 
             if(signupView.checkEmpty()){
-                signupView.showMessage("Please enter all fields");
+                JOptionPane.showMessageDialog(signupView.getContentPane(),"Please enter all fields");
                 return;
             }
             if(!signupView.confirmPassword()){
-                signupView.showMessage("Confirm password fail !");
+                JOptionPane.showMessageDialog(signupView.getContentPane(),"Confirm password fail !");
                 return;
             }
             User iuser = signupView.getUser();
