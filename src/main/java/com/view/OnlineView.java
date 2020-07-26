@@ -4,7 +4,6 @@ import com.constraints.ImageConstraints;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
-import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
@@ -12,9 +11,6 @@ import java.awt.event.WindowAdapter;
 public class OnlineView extends JFrame{
 
     private JPanel contentPane;
-    private String[] columnNames = new String[]{"ONLINE"};
-    private Object data = new Object[][]{};
-    //private JTable table;
     private JButton btnLogout;
     private JButton btnChat;
     private JList list;
@@ -24,7 +20,7 @@ public class OnlineView extends JFrame{
      */
     public OnlineView(String username) {
 
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(HIDE_ON_CLOSE);
         setLocationRelativeTo(null);
         setResizable(false);
         setBounds(100, 100, 451, 472);
@@ -58,8 +54,6 @@ public class OnlineView extends JFrame{
         btnLogout.setBackground(Color.WHITE);
         btnLogout.setIcon(new ImageIcon(ImageConstraints.img_logout));
         contentPane.add(btnLogout);
-        //btnLogout.addActionListener(this);
-
 
         btnChat = new JButton("Chat");
         btnChat.setBounds(30, 379, 89, 43);

@@ -36,7 +36,7 @@ public class ChatView extends JFrame {
     }
 
     public void initcomponents() {
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(HIDE_ON_CLOSE);
         setBounds(100, 100, 734, 547);
         setLocationRelativeTo(null);
         setResizable(false);
@@ -202,5 +202,9 @@ public class ChatView extends JFrame {
 
     public void addLogoutListener(ActionListener listener) {
         btnLogout.addActionListener(listener);
+    }
+
+    public String getUsername() {
+        return username;
     }
 }

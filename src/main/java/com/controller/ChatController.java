@@ -2,22 +2,22 @@ package com.controller;
 
 import com.client.Client;
 import com.view.ChatView;
-import com.view.LoginView;
-import com.view.OnlineView;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 
 public class ChatController {
-    LoginView loginView;
     ChatView chatView;
     private Client client;
     private File file;
+
 
     public ChatController(Client client, ChatView chatView) {
 
@@ -27,6 +27,7 @@ public class ChatController {
         chatView.addLogoutListener(new LogoutListener());
         chatView.addEmojiListener(new EmojiListener());
         chatView.addSendFileListener(new SendFileLinter());
+        chatView.addWindowListener(new WindowCloseListener());
     }
 
     public void setTextArea(String msg, String name) {
@@ -102,7 +103,27 @@ public class ChatController {
     class LogoutListener implements ActionListener {
 
         public void actionPerformed(ActionEvent e) {
-            chatView.setVisible(false);
+            logout();
+        }
+    }
+
+    class WindowCloseListener extends WindowAdapter{
+        @Override
+        public void windowClosing(WindowEvent e) {
+            logout();
+        }
+    }
+
+    public void logout() {
+        try {
+            StringBuilder stringBuilder = new StringBuilder();
+            for (String user : chatView.getNameOnline()
+            ) {
+                stringBuilder.append("#").append(user);
+            }
+            client.getOutput().writeUTF("4#" + chatView.getUsername() + stringBuilder.toString());
+        } catch (IOException ex) {
+            ex.printStackTrace();
         }
     }
 

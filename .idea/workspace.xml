@@ -4,12 +4,19 @@
     <list default="true" id="8909d87c-0b9d-4171-8463-b2e56346da24" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/DAO/user.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DAO/user.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/client/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/ChatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/ChatController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/OnlineController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/OnlineController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/view/ChatView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/view/ChatView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/view/OnlineView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/view/OnlineView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/client/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/client/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/controller/OnlineController$ChatListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controller/OnlineController$ChatListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/controller/OnlineController$LogoutListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controller/OnlineController$LogoutListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/controller/ChatController$EmojiListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controller/ChatController$EmojiListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/controller/ChatController$LogoutListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controller/ChatController$LogoutListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/controller/ChatController$SendFileLinter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controller/ChatController$SendFileLinter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/controller/ChatController$SendListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controller/ChatController$SendListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/controller/ChatController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controller/ChatController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/controller/OnlineController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controller/OnlineController$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/controller/OnlineController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controller/OnlineController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/view/ChatView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/view/ChatView.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/view/OnlineView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/view/OnlineView.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -107,10 +114,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="414" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1595052038786" />
-    <state x="765" y="234" key="#com.intellij.ide.util.MemberChooser" timestamp="1595693476257">
+    <state x="765" y="234" key="#com.intellij.ide.util.MemberChooser" timestamp="1595762562663">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="765" y="234" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1595693476257" />
+    <state x="765" y="234" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1595762562663" />
     <state x="689" y="309" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1595052021743">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -135,38 +142,38 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1594921571424" />
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1595757742734">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1595763054009">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1595757742734" />
-    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1595757742734">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1595763054009" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1595763054009">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1595757742734" />
-    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1595757742734">
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1595763054009" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1595763054009">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1595757742734" />
-    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1595757742734">
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1595763054009" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1595763054009">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1595757742734" />
-    <state width="1877" height="356" key="GridCell.Tab.1.bottom" timestamp="1595757026144">
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1595763054009" />
+    <state width="1877" height="356" key="GridCell.Tab.1.bottom" timestamp="1595759007137">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="356" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1595757026144" />
-    <state width="1877" height="356" key="GridCell.Tab.1.center" timestamp="1595757026144">
+    <state width="1877" height="356" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1595759007137" />
+    <state width="1877" height="356" key="GridCell.Tab.1.center" timestamp="1595759007137">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="356" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1595757026144" />
-    <state width="1877" height="356" key="GridCell.Tab.1.left" timestamp="1595757026144">
+    <state width="1877" height="356" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1595759007137" />
+    <state width="1877" height="356" key="GridCell.Tab.1.left" timestamp="1595759007137">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="356" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1595757026144" />
-    <state width="1877" height="356" key="GridCell.Tab.1.right" timestamp="1595757026144">
+    <state width="1877" height="356" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1595759007137" />
+    <state width="1877" height="356" key="GridCell.Tab.1.right" timestamp="1595759007137">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="356" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1595757026144" />
+    <state width="1877" height="356" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1595759007137" />
     <state x="440" y="99" key="SettingsEditor" timestamp="1595600273123">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -183,6 +190,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="656" y="257" width="607" height="536" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1595753615308" />
+    <state x="702" y="153" key="refactoring.ChangeSignatureDialog" timestamp="1595759790675">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="702" y="153" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1595759790675" />
     <state x="616" y="243" key="run.anything.popup" timestamp="1595747700603">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -193,8 +204,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/controller/OnlineController.java</url>
-          <line>96</line>
-          <option name="timeStamp" value="61" />
+          <line>252</line>
+          <option name="timeStamp" value="62" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -202,6 +213,7 @@
       <configuration name="Application">
         <watch expression="client" language="JAVA" />
         <watch expression="chatSingle.get(j).getTabOnline()" language="JAVA" />
+        <watch expression="String.valueOf(onlineView.getList().getModel().getElementAt(k))" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>

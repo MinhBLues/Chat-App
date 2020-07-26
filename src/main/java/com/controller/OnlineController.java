@@ -33,7 +33,7 @@ public class OnlineController {
         onlineView.addChatListener(new ChatListener());
         showBoxRecevice();
         onlineView.addLogoutListener(new LogoutListener());
-        onlineView.addWindowListener(new CloseListener());
+        onlineView.addCloseListener(new CloseListener());
     }
 
     class LogoutListener implements ActionListener {
@@ -82,33 +82,58 @@ public class OnlineController {
                          */
 
                         if (ex[0].equals("logout")) {
-
-                            DefaultListModel model = new DefaultListModel();
-
-                            for (int k = 0; k < onlineView.getList().getModel().getSize(); k++) {
-                                if (String.valueOf(onlineView.getList().getModel().getElementAt(k)).equals(ex[1]))
-                                    continue;
-                                model.addElement(String.valueOf(onlineView.getList().getModel().getElementAt(k)));
-                            }
-                            onlineView.getList().clearSelection();
-                            onlineView.getList().setModel(model);
-
-                            for (int j = 0; j < chatSingle.size(); j++) {
-                                if (chatSingle.get(j).getTabOnline().equals(ex[1])) {
-                                    chatSingle.get(j).chatView.setVisible(false);
-                                    chatSingle.remove(j);
-                                    chatListSingle.remove(ex[1]);
+                            if (ex.length > 2) {
+                                for (int j = 0; j < chatSingle.size(); j++) {
+                                    if (username.equals(ex[1])) {
+                                        if (chatSingle.get(j).getTabOnline().equals(ex[2])) {
+                                            chatSingle.get(j).chatView.setVisible(false);
+                                        }
+                                        break;
+                                    }
                                 }
-                            }
-                            for (int j = 0; j < chatGroup.size(); j++) {
-                                ArrayList<String> listUser = chatGroup.get(j).getListChat();
-                                if (listUser.contains(ex[1])) {
-                                    listUser.remove(ex[1]);
-                                    DefaultListModel model1 = new DefaultListModel();
-                                    model1.addElement(listUser);
-                                    chatGroup.get(j).setTabOnline(model1);
-                                    if (chatListGroup.get(j).contains(ex[1])) {
-                                        chatListGroup.get(i).replace(ex[1], "");
+                                for (int j = 0; j < chatGroup.size(); j++) {
+                                    ArrayList<String> listUser = chatGroup.get(j).getListChat();
+                                    boolean flag = true;
+                                    for (int k = 1; k < ex.length; k++) {
+                                        if (!listUser.contains(ex[k])) {
+                                            flag = !flag;
+                                            break;
+                                        }
+                                    }
+                                    if (flag) {
+                                        chatGroup.get(j).chatView.setVisible(false);
+                                        break;
+                                    }
+                                }
+                            } else {
+
+                                DefaultListModel model = new DefaultListModel();
+
+                                for (int k = 0; k < onlineView.getList().getModel().getSize(); k++) {
+                                    if (String.valueOf(onlineView.getList().getModel().getElementAt(k)).equals(ex[1]))
+                                        continue;
+                                    model.addElement(String.valueOf(onlineView.getList().getModel().getElementAt(k)));
+                                }
+                                onlineView.getList().clearSelection();
+                                onlineView.getList().setModel(model);
+
+                                for (int j = 0; j < chatSingle.size(); j++) {
+                                    if (chatSingle.get(j).getTabOnline().equals(ex[1])) {
+                                        chatSingle.get(j).chatView.setVisible(false);
+                                        chatSingle.remove(j);
+                                        chatListSingle.remove(ex[1]);
+                                    }
+                                }
+                                for (int j = 0; j < chatGroup.size(); j++) {
+                                    ArrayList<String> listUser = chatGroup.get(j).getListChat();
+                                    if (listUser.contains(ex[1])) {
+                                        listUser.remove(ex[1]);
+                                        DefaultListModel model1 = new DefaultListModel();
+                                        model1.addElement(listUser);
+                                        chatGroup.get(j).setTabOnline(model1);
+                                        if (chatListGroup.get(j).contains(ex[1])) {
+                                            chatListGroup.get(i).replace(ex[1], "");
+                                        }
                                     }
                                 }
                             }
@@ -146,6 +171,7 @@ public class OnlineController {
                                     } else {
                                         for (int j = 0; j < chatSingle.size(); j++) {
                                             if (chatSingle.get(j).getTabOnline().equals(sender)) {
+                                                chatSingle.get(j).chatView.setVisible(true);
                                                 if (ex[0].equals("3File3")) {
                                                     chooseFile(chatSingle.get(j).chatView, ex[3], Integer.parseInt(ex[4]));
                                                 }
@@ -224,18 +250,17 @@ public class OnlineController {
                                 }
                             } else {
                                 int j = 0;
-                                Object[][] online = new Object[50][1];
-
-                                for (j = 0; j < i; j++) {
-                                    if (msg.equals(online[j][0])) break;
-                                }
                                 DefaultListModel model = new DefaultListModel();
-                                if (j == i && !msg.equals(client.getUsername())) {
-                                    //online[i][0] = msg;
-                                    model.addElement(msg);
-                                    i++;
+                                for (int k = 0; k < onlineView.getList().getModel().getSize(); k++) {
+                                    model.addElement(String.valueOf(onlineView.getList().getModel().getElementAt(k)));
+                                    if (String.valueOf(onlineView.getList().getModel().getElementAt(k)).contains(msg)) {
+                                        j = -1;
+                                    }
                                 }
-                                onlineView.setList(model);
+                                if (j == 0) {
+                                    model.addElement(msg);
+                                    onlineView.setList(model);
+                                }
                             }
                         }
                     }
@@ -309,28 +334,58 @@ public class OnlineController {
     public void boxChat() {
 
         int[] selectedrows = onlineView.getList().getSelectedIndices();
-        if (selectedrows.length == 1 && !chatListSingle.contains(onlineView.getList().getSelectedValue().toString())) {
-            ChatController chatController = new ChatController(client, new ChatView(username));
-            DefaultListModel online = new DefaultListModel();
-            online.addElement(onlineView.getList().getSelectedValue().toString());
-            chatController.setTabOnline(online);
-            chatController.showChatView();
-            chatListSingle.add(onlineView.getList().getSelectedValue().toString());
-            chatSingle.add(chatController);
-        } else if (selectedrows.length > 0) {
-            ChatController chatController = new ChatController(client, new ChatView(username));
-            DefaultListModel online = new DefaultListModel();
-            StringBuilder msg = new StringBuilder();
-            for (int i = 0; i < selectedrows.length; i++) {
-                online.addElement(onlineView.getList().getModel().getElementAt(selectedrows[i]).toString());
-                msg.append(onlineView.getList().getModel().getElementAt(selectedrows[i]).toString());
-                msg.append("#");
+        if (selectedrows.length == 1 ) {
+
+            boolean flag = true;
+            for (int j = 0; j < chatSingle.size(); j++) {
+                if (chatSingle.get(j).getTabOnline().equals(onlineView.getList().getSelectedValue().toString())) {
+                    chatSingle.get(j).chatView.setVisible(true);
+                    flag = false;
+                    break;
+                }
             }
-            msg.append(username);
-            chatListGroup.add(msg.toString());
-            chatController.setTabOnline(online);
-            chatController.showChatView();
-            chatGroup.add(chatController);
+            if (flag) {
+
+                ChatController chatController = new ChatController(client, new ChatView(username));
+                DefaultListModel online = new DefaultListModel();
+                online.addElement(onlineView.getList().getSelectedValue().toString());
+                chatController.setTabOnline(online);
+                chatController.showChatView();
+                chatListSingle.add(onlineView.getList().getSelectedValue().toString());
+                chatSingle.add(chatController);
+            }
+        } else if (selectedrows.length > 1) {
+            boolean flag = true;
+            for (int j = 0; j < chatGroup.size(); j++) {
+                ArrayList<String> listUser = chatGroup.get(j).getListChat();
+                boolean flag1 = true;
+                for (int k = 0; k < selectedrows.length; k++) {
+                    if (!listUser.contains(onlineView.getList().getModel().getElementAt(selectedrows[k]).toString())) {
+                        flag = !flag;
+                        break;
+                    }
+                }
+                if (flag1) {
+                    flag = false;
+                    chatGroup.get(j).chatView.setVisible(false);
+                    break;
+                }
+            }
+            if (flag) {
+                ChatController chatController = new ChatController(client, new ChatView(username));
+                DefaultListModel online = new DefaultListModel();
+                StringBuilder msg = new StringBuilder();
+                for (int i = 0; i < selectedrows.length; i++) {
+                    online.addElement(onlineView.getList().getModel().getElementAt(selectedrows[i]).toString());
+                    msg.append(onlineView.getList().getModel().getElementAt(selectedrows[i]).toString());
+                    msg.append("#");
+                }
+                msg.append(username);
+                chatListGroup.add(msg.toString());
+                chatController.setTabOnline(online);
+                chatController.showChatView();
+                chatGroup.add(chatController);
+            }
         }
     }
 
