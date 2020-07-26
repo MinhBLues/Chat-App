@@ -5,19 +5,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/DAO/user.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DAO/user.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/client/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/ChatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/ChatController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/OnlineController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/OnlineController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/view/ChatView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/view/ChatView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/view/OnlineView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/view/OnlineView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/controller/ChatController$EmojiListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controller/ChatController$EmojiListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/controller/ChatController$LogoutListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controller/ChatController$LogoutListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/controller/ChatController$SendFileLinter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controller/ChatController$SendFileLinter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/controller/ChatController$SendListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controller/ChatController$SendListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/controller/ChatController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controller/ChatController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/controller/OnlineController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controller/OnlineController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/controller/OnlineController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controller/OnlineController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/view/ChatView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/view/ChatView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/view/OnlineView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/view/OnlineView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/SignupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/SignupController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/view/SignUpView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/view/SignUpView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,22 +132,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1594921571424" />
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1595763054009">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1595763420923">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1595763054009" />
-    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1595763054009">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1595763420923" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1595763420923">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1595763054009" />
-    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1595763054009">
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1595763420923" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1595763420923">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1595763054009" />
-    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1595763054009">
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1595763420923" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1595763420923">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1595763054009" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1595763420923" />
     <state width="1877" height="356" key="GridCell.Tab.1.bottom" timestamp="1595759007137">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

@@ -123,10 +123,6 @@ public class SignUpView extends JFrame {
 		return txtName.getText().toString();
 	}
 
-	public void actionPerformed(ActionEvent e) {
-
-	}
-
 	public void showMessage(String message) {
 		JOptionPane.showMessageDialog(this, message);
 	}
