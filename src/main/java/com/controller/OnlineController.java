@@ -1,31 +1,24 @@
 package com.controller;
 
 import com.client.Client;
-<<<<<<< Updated upstream:src/main/java/com/controller/OnlineController.java
 import com.view.LoginView;
 import com.view.OnlineView;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-=======
+
 import com.view.ChatView;
-import com.view.OnlineView;
 
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.FileOutputStream;
->>>>>>> Stashed changes:ChatClient/src/main/java/com/controller/OnlineController.java
 import java.io.IOException;
 import java.util.ArrayList;
 
 public class OnlineController {
     OnlineView onlineView;
-<<<<<<< Updated upstream:src/main/java/com/controller/OnlineController.java
     private ArrayList<String> chatList;
     LoginView loginView;
-=======
     private ArrayList<String> chatListSingle = new ArrayList<>();
     private ArrayList<String> chatListGroup = new ArrayList<>();
     private ArrayList<ChatController> chatSingle = new ArrayList<>();
@@ -33,28 +26,30 @@ public class OnlineController {
     private Client client;
     String username;
 
->>>>>>> Stashed changes:ChatClient/src/main/java/com/controller/OnlineController.java
     public OnlineController(String username) {
         this.username = username;
         onlineView = new OnlineView(username);
-<<<<<<< Updated upstream:src/main/java/com/controller/OnlineController.java
         chatList = new ArrayList<>();
+        onlineView.addChatListener(new ChatListener());
+        showBoxRecevice();
         onlineView.addLogoutListener(new LogoutListener());
     }
+
     class LogoutListener implements ActionListener {
 
         @Override
         public void actionPerformed(ActionEvent e) {
-            onlineView.getClient().writeMessage("4#" + onlineView.getName());
+            try {
+                client.getOutput().writeUTF("4#" + onlineView.getName());
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
             onlineView.setVisible(false);
             loginView = new LoginView();
             LoginController controller = new LoginController(loginView);
             controller.showLoginView();
         }
-=======
-        onlineView.addChatListener(new ChatListener());
-        showBoxRecevice();
->>>>>>> Stashed changes:ChatClient/src/main/java/com/controller/OnlineController.java
+
     }
 
     public void show() {
@@ -77,6 +72,30 @@ public class OnlineController {
                          TH1: Bắt đầu 1 boxchat
                          TH2: Đăng nhập/Đăng kí
                          */
+
+                        if (ex[0].equals("logout")) {
+                            for (int j = 0; j < chatSingle.size(); j++) {
+                                if (chatSingle.get(j).getTabOnline().equals(ex[1])) {
+                                    chatSingle.get(j).chatView.setVisible(false);
+                                    chatSingle.remove(j);
+                                    chatListSingle.remove(ex[1]);
+                                }
+                            }
+                            for (int j = 0; j < chatGroup.size(); j++) {
+                                ArrayList<String> listUser = chatGroup.get(j).getListChat();
+                                if (listUser.contains(ex[1])) {
+                                    listUser.remove(ex[1]);
+                                    DefaultListModel model = new DefaultListModel();
+                                    model.addElement(listUser);
+                                    chatGroup.get(j).setTabOnline(model);
+                                    if(chatListGroup.get(j).contains(ex[1]))
+                                    {
+                                        chatListGroup.get(i).replace(ex[1],"");
+                                    }
+                                }
+                            }
+                        }
+
                         if (ex.length > 1) {
                             /**
                              Chat single.

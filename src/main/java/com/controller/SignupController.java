@@ -25,6 +25,7 @@ public class SignupController {
     public void showSignup(){
         signupView.setVisible(true);
     }
+
     class LoginListener extends MouseAdapter {
 
         public void actionPerformed(ActionEvent e) {
@@ -35,6 +36,7 @@ public class SignupController {
 
         }
     }
+
     class SignupListener implements ActionListener{
 
         public void actionPerformed(ActionEvent e) {

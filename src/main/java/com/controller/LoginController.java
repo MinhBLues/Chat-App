@@ -16,11 +16,13 @@ public class LoginController {
     SignUpView signupView;
     ChatView chatView;
     List<User> list;
+
     public LoginController(LoginView loginView){
         this.loginView = loginView;
         loginView.addLoginListener(new LoginListener());
         loginView.addSignupListener(new SignupListener());
     }
+
     public  void showLoginView(){
         loginView.setVisible(true);
     }
@@ -51,6 +53,7 @@ public class LoginController {
             }
         }
     }
+
     class SignupListener extends MouseAdapter {
 
         public void actionPerformed(ActionEvent e) {

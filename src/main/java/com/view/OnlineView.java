@@ -8,33 +8,20 @@ import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.awt.event.ActionListener;
 
-public class OnlineView extends JFrame implements ActionListener{
+public class OnlineView extends JFrame{
 
     private JPanel contentPane;
     private String[] columnNames = new String[]{"ONLINE"};
     private Object data = new Object[][]{};
     private JTable table;
-<<<<<<< Updated upstream:src/main/java/com/view/OnlineView.java
-    private JLabel lblUsername;
-    private ArrayList<String> chatListSingle;
-    private ArrayList<String> chatListGroup;
     private JButton btnLogout;
-=======
     private JButton btnChat;
->>>>>>> Stashed changes:ChatClient/src/main/java/com/view/OnlineView.java
 
     /**
      * Create the frame.
      */
-<<<<<<< Updated upstream:src/main/java/com/view/OnlineView.java
-    public OnlineView(String username){
-        chatListGroup = new ArrayList<>();
-        chatListSingle = new ArrayList<>();
-=======
     public OnlineView(String username) {
 
-
->>>>>>> Stashed changes:ChatClient/src/main/java/com/view/OnlineView.java
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setBounds(100, 100, 451, 472);
         contentPane = new JPanel();
@@ -89,18 +76,8 @@ public class OnlineView extends JFrame implements ActionListener{
     public void addChatListener(ActionListener listener){
         btnChat.addActionListener(listener);
     }
-<<<<<<< Updated upstream:src/main/java/com/view/OnlineView.java
-    public Client getClient(){
-        return this.client;
-    }
-    @Override
-    public void actionPerformed(ActionEvent e) {
-    }
 
     public void addLogoutListener(ActionListener listener){
         btnLogout.addActionListener(listener);
     }
-=======
-
->>>>>>> Stashed changes:ChatClient/src/main/java/com/view/OnlineView.java
 }
