@@ -6,8 +6,9 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/DAO/user.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DAO/user.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/client/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/SignupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/SignupController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/view/SignUpView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/view/SignUpView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/controller/LoginController$LoginListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controller/LoginController$LoginListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/controller/LoginController$SignupListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controller/LoginController$SignupListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controller/LoginController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,22 +133,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1594921571424" />
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1595763420923">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1595763781298">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1595763420923" />
-    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1595763420923">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1595763781298" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1595763781298">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1595763420923" />
-    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1595763420923">
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1595763781298" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1595763781298">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1595763420923" />
-    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1595763420923">
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1595763781298" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1595763781298">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1595763420923" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1595763781298" />
     <state width="1877" height="356" key="GridCell.Tab.1.bottom" timestamp="1595759007137">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

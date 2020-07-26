@@ -6,6 +6,7 @@ import com.view.ChatView;
 import com.view.LoginView;
 import com.view.SignUpView;
 
+import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
@@ -18,38 +19,34 @@ public class LoginController {
     ChatView chatView;
     List<User> list;
 
-    public LoginController(LoginView loginView){
+    public LoginController(LoginView loginView) {
         this.loginView = loginView;
         loginView.addLoginListener(new LoginListener());
         loginView.addSignupListener(new SignupListener());
     }
 
-    public  void showLoginView(){
+    public void showLoginView() {
         loginView.setVisible(true);
     }
 
-    class  LoginListener implements ActionListener {
+    class LoginListener implements ActionListener {
 
         public void actionPerformed(ActionEvent e) {
-            if(loginView.checkEmpty()){
-                loginView.showMessage("Please enter all fields");
+            if (loginView.checkEmpty()) {
+                JOptionPane.showMessageDialog(loginView.getContentPane(), "Please enter all fields");
                 return;
             }
             list = ReadWriteCSV.read();
-            for(int i=0;i<list.size();i++) {
+            for (int i = 0; i < list.size(); i++) {
                 if (list.get(i).getUsername().equals(loginView.getName())) {
                     if (list.get(i).getPassword().equals(loginView.getPassword())) {
                         chatView = new ChatView(loginView.getName());
-                        //ChatController controller = new ChatController(chatView);
-                        //controller.showChatView();
                         loginView.setVisible(false);
+                    } else {
+                        JOptionPane.showMessageDialog(loginView.getContentPane(), "Password wrong!");
                     }
-                    else{
-                        loginView.showMessage("Password wrong!");
-                    }
-                }
-                else{
-                    loginView.showMessage("User not exist !");
+                } else {
+                    JOptionPane.showMessageDialog(loginView.getContentPane(), "User not exist !");
                 }
             }
         }
