@@ -13,9 +13,10 @@ public class OnlineView extends JFrame{
     private JPanel contentPane;
     private String[] columnNames = new String[]{"ONLINE"};
     private Object data = new Object[][]{};
-    private JTable table;
+    //private JTable table;
     private JButton btnLogout;
     private JButton btnChat;
+    private JList list;
 
     /**
      * Create the frame.
@@ -45,11 +46,13 @@ public class OnlineView extends JFrame{
         scrollPane.setBounds(10, 11, 374, 282);
         panel.add(scrollPane);
 
-        table = new JTable();
-        table.setModel(new DefaultTableModel((Object[][]) data, columnNames));
-        table.setRowSelectionAllowed(true);
-        table.setSelectionMode(ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
-        scrollPane.setViewportView(table);
+//        table = new JTable();
+////        table.setModel(new DefaultTableModel((Object[][]) data, columnNames));
+////        table.setRowSelectionAllowed(true);
+////        table.setSelectionMode(ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
+        list = new JList(new DefaultListModel());
+        list.setSelectionMode( ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
+        scrollPane.setViewportView(list);
 
         btnLogout = new JButton("");
         btnLogout.setBounds(350, 11, 50, 50);
@@ -65,12 +68,21 @@ public class OnlineView extends JFrame{
 
     }
 
-    public JTable getTable() {
-        return table;
+//    public JTable getTable() {
+//        return table;
+//    }
+
+//    public void setTable(Object[][] online) {
+//        table.setModel(new DefaultTableModel(online, columnNames));
+//    }
+
+
+    public JList getList() {
+        return list;
     }
 
-    public void setTable(Object[][] online) {
-        table.setModel(new DefaultTableModel(online, columnNames));
+    public void setList(DefaultListModel model) {
+        list.setModel(model);
     }
 
     public void addChatListener(ActionListener listener){
